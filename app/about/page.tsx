@@ -1,6 +1,4 @@
-import dynamic from 'next/dynamic'
-
-const AboutSection = dynamic(() => import('@/components/AboutSection'))
+import AboutSection from '@/components/AboutSection'
 
 export default function AboutPage() {
   return <AboutSection />

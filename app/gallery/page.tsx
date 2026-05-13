@@ -1,6 +1,6 @@
+import PromoCarousel from '@/components/PromoCarousel'
 import dynamic from 'next/dynamic'
 
-const PromoCarousel = dynamic(() => import('@/components/PromoCarousel'))
 const GalleryGrid = dynamic(() => import('@/components/GalleryGrid'))
 
 export default function GalleryPage() {

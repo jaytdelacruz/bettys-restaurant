@@ -8,41 +8,49 @@ const pastries = [
     id: 'pastries-1',
     src: '/pastries1.jpg',
     alt: "Betty's fresh pastries",
+    priority: true,
   },
   {
     id: 'pastries-2',
     src: '/pastries2.jpg',
     alt: "Betty's baked goods",
+    priority: true,
   },
   {
     id: 'pastries-3',
     src: '/pastries3.jpg',
     alt: "Betty's cakes and breads",
+    priority: true,
   },
   {
     id: 'pastries-4',
     src: '/pastries4.jpg',
     alt: "Betty's bakehouse selection",
+    priority: true,
   },
   {
     id: 'pastries-5',
     src: '/pastries5.jpg',
     alt: "Betty's homemade pastries",
+    priority: false,
   },
   {
     id: 'pastries-6',
     src: '/pastries6.jpg',
     alt: "Betty's sweet treats",
+    priority: false,
   },
   {
     id: 'pastries-7',
     src: '/Pastries7.jpg',
     alt: "Betty's specialty breads",
+    priority: false,
   },
   {
     id: 'pastries-8',
     src: '/Pastries8.jpg',
     alt: "Betty's bakehouse favorites",
+    priority: false,
   },
 ]
 
@@ -115,6 +123,7 @@ export default function BakehouseGrid() {
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 25vw"
                 quality={80}
+                priority={item.priority}
               />
               {/* Warm overlay on hover */}
               <div className="absolute inset-0 bg-primary/70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
