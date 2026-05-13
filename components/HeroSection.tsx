@@ -165,25 +165,6 @@ export default function HeroSection() {
         {/* Warm overlay for depth */}
         <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent lg:bg-gradient-to-r lg:from-cream/30 lg:via-transparent lg:to-transparent" />
 
-        {/* Floating location badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="absolute bottom-6 left-6 right-6 lg:bottom-10 lg:left-10 lg:right-auto"
-        >
-          <div className="inline-flex items-start gap-3 bg-warm/95 backdrop-blur-sm border border-tan rounded-2xl px-5 py-4 shadow-xl max-w-xs">
-            <svg className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
-              <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.003 3.5-4.697 3.5-8.327a8 8 0 10-16 0c0 3.63 1.556 6.326 3.5 8.327a19.583 19.583 0 002.682 2.282 16.975 16.975 0 001.145.742z" clipRule="evenodd" />
-            </svg>
-            <div>
-              <p className="font-lato text-xs font-bold text-primary tracking-wide uppercase mb-0.5">Find Us Here</p>
-              <p className="font-lato text-xs text-primary/65 leading-snug">
-                #8 Maria Clara Ave, Aurora Subdivision, Iloilo City
-              </p>
-            </div>
-          </div>
-        </motion.div>
       </motion.div>
 
     </section>

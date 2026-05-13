@@ -187,23 +187,24 @@ export default function ContactPage() {
           </motion.div>
         </div>
 
-        {/* Map placeholder */}
+        {/* Embedded Google Map */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mt-12 rounded-3xl overflow-hidden border border-tan h-56 md:h-72 bg-gradient-to-br from-tan/40 via-accent/10 to-tan/20 flex items-center justify-center"
+          className="mt-12 rounded-3xl overflow-hidden border border-tan shadow-sm h-72 md:h-96"
         >
-          <div className="text-center">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-              <svg className="w-6 h-6 text-primary/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-            </div>
-            <p className="font-lato text-sm text-primary/40">8 Maria Clara Avenue, Iloilo City</p>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0!2d122.5621!3d10.7202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee57b4dfdb455%3A0x2d93f16c7a0c9c3e!2sBetty's%20Ilonggo%20Table%20and%20Bakehouse!5e0!3m2!1sen!2sph!4v1"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Betty's Ilonggo Table and Bakehouse Location"
+          />
         </motion.div>
       </div>
     </section>

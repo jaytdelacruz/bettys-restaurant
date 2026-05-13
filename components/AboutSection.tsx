@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 36 },
@@ -92,6 +93,26 @@ export default function AboutSection() {
             with a modern and cozy dining experience. It has become known among locals and visitors for
             serving nostalgic home-style dishes in a stylish but welcoming setting.
           </motion.p>
+        </motion.div>
+
+        {/* Brand image */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="flex justify-center mb-14"
+        >
+          <div className="relative w-full max-w-2xl rounded-3xl overflow-hidden shadow-lg">
+            <Image
+              src="/Brand.jpg"
+              alt="Betty's Ilonggo Table and Bakehouse"
+              width={1200}
+              height={500}
+              className="w-full object-contain"
+              priority
+            />
+          </div>
         </motion.div>
 
         {/* Horizontal rule with icon */}
