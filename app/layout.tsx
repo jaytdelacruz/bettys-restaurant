@@ -18,10 +18,10 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "Betty's Filipino Restaurant | Cebu City",
+  title: "Betty's Ilonggo Table and Bakehouse | Iloilo City",
   description:
-    "Authentic Ilonggo cuisine made with love in Iloilo City, Philippines. Home of KBL, Kare-Kare, Palabok, and classic Ilonggo comfort food.",
-  keywords: ['Filipino restaurant', 'Cebu City', 'Betty\'s', 'adobo', 'sinigang', 'lechon'],
+    "Authentic Ilonggo cuisine made with love in Iloilo City, Philippines. Home of KBL, Kare-Kare, Palabok, Dinuguan, and classic Ilonggo comfort food.",
+  keywords: ['Filipino restaurant', 'Iloilo City', "Betty's", 'Ilonggo food', 'KBL', 'Kare-Kare', 'Palabok', 'bakehouse'],
 }
 
 export default function RootLayout({

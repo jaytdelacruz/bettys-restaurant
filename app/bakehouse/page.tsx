@@ -1,4 +1,6 @@
-import BakehouseGrid from '@/components/BakehouseGrid'
+import dynamic from 'next/dynamic'
+
+const BakehouseGrid = dynamic(() => import('@/components/BakehouseGrid'))
 
 export default function BakehousePage() {
   return (

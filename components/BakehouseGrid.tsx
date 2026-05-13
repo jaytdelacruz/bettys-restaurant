@@ -113,7 +113,8 @@ export default function BakehouseGrid() {
                 alt={item.alt}
                 fill
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 1024px) 50vw, 25vw"
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 25vw"
+                quality={80}
               />
               {/* Warm overlay on hover */}
               <div className="absolute inset-0 bg-primary/70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">

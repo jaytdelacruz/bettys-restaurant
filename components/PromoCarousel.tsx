@@ -69,7 +69,8 @@ export default function PromoCarousel() {
               alt={promos[current].alt}
               fill
               className="object-cover object-center"
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+              quality={85}
               priority={current === 0}
             />
             {/* Subtle dark overlay at bottom */}
